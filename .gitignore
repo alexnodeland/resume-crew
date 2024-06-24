@@ -16,3 +16,6 @@ db/
 
 # Output directories
 output/
+
+# Development Tools
+.aider*
