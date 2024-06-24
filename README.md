@@ -1,3 +1,13 @@
+```
+    ____                                 ______                 
+   / __ \___  _______  ______ ___  ___  / ____/_______ _      __
+  / /_/ / _ \/ ___/ / / / __ `__ \/ _ \/ /   / ___/ _ \ | /| / /
+ / _, _/  __(__  ) /_/ / / / / / /  __/ /___/ /  /  __/ |/ |/ / 
+/_/ |_|\___/____/\__,_/_/ /_/ /_/\___/\____/_/   \___/|__/|__/  
+
+Your companion for customizing resumes and preparing for interviews.
+```
+
 # 🚀 ResumeCrew
 
 ResumeCrew is an AI-powered tool that helps job seekers tailor their resumes and prepare for interviews using [CrewAI](https://github.com/joaomdmoura/crewAI).
