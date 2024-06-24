@@ -36,18 +36,21 @@ def run():
     print(f"{GREEN}Example inputs loaded successfully.{END}\n")
 
     # Prompt the user for inputs, using example inputs if left blank
+    applicant_name = input(f"{BOLD}Enter your name (leave blank for default): {END}") or example_inputs['applicant_name']
     job_posting_url = input(f"{BOLD}Enter the job posting URL (leave blank for default): {END}") or example_inputs['job_posting_url']
     github_url = input(f"{BOLD}Enter your GitHub URL (leave blank for default): {END}") or example_inputs['github_url']
     personal_writeup = input(f"{BOLD}Enter your personal writeup (leave blank for default): {END}") or example_inputs['personal_writeup']
     
     # Define the inputs for the job application process
     job_application_inputs = {
+        'applicant_name': applicant_name,
         'job_posting_url': job_posting_url,
         'github_url': github_url,
         'personal_writeup': personal_writeup
     }
 
     print(f"\n{UNDERLINE}Inputs received:{END}")
+    print(f"{BOLD}Applicant Name:{END} {applicant_name}")
     print(f"{BOLD}Job Posting URL:{END} {job_posting_url}")
     print(f"{BOLD}GitHub URL:{END} {github_url}")
     print(f"{BOLD}Personal Writeup:{END} {personal_writeup}\n")

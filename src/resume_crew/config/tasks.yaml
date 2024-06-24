@@ -1,47 +1,63 @@
 research_task:
   description: >
     Analyze the job posting URL provided ({job_posting_url}) 
-    to extract key skills, experiences, and qualifications 
-    required. Use the tools to gather content and identify 
-    and categorize the requirements.
+    to extract key skills, experiences, and qualifications required. 
+    Use the following steps:
+    1. Access the job posting URL.
+    2. Identify and list the key skills, experiences, and qualifications mentioned.
+    3. Categorize these requirements into primary and secondary importance.
+    4. Use tools to gather additional context and insights about the job role.
+    5. Summarize the findings in a structured format for {applicant_name}.
   expected_output: >
-    A structured list of job requirements, including necessary 
-    skills, qualifications, and experiences.
+    A structured list of job requirements for {applicant_name}, including:
+    - Primary skills and qualifications
+    - Secondary skills and qualifications
+    - Additional insights and context about the job role
 
 profile_task:
   description: >
-    Compile a detailed personal and professional profile 
-    using the GitHub ({github_url}) URLs, and personal write-up 
-    ({personal_writeup}). Utilize tools to extract and 
-    synthesize information from these sources.
+    Compile a detailed personal and professional profile for {applicant_name} 
+    using the GitHub ({github_url}) URLs and personal write-up ({personal_writeup}). 
+    Follow these steps:
+    1. Extract relevant information from the provided GitHub URLs.
+    2. Analyze the personal write-up to identify key strengths and experiences.
+    3. Synthesize the information to create a cohesive profile.
+    4. Highlight {applicant_name}'s skills, project experiences, contributions, interests, and communication style.
   expected_output: >
-    A comprehensive profile document that includes skills, 
-    project experiences, contributions, interests, and 
-    communication style.
+    A comprehensive profile document for {applicant_name} that includes:
+    - Key skills and strengths
+    - Project experiences and contributions
+    - Personal interests and communication style
+    - Summary of professional background
 
 resume_strategy_task:
   description: >
-    Using the profile and job requirements obtained from 
-    previous tasks, tailor the resume to highlight the most 
-    relevant areas. Employ tools to adjust and enhance the 
-    resume content. Make sure this is the best resume even but 
-    don't make up any information. Update every section, 
-    including the initial summary, work experience, skills, 
-    and education. All to better reflect the candidate's 
-    abilities and how it matches the job posting.
+    Using the profile and job requirements obtained from previous tasks, 
+    tailor the resume for {applicant_name} to highlight the most relevant areas. 
+    Follow these steps:
+    1. Review the profile and job requirements.
+    2. Identify the most relevant skills and experiences to emphasize.
+    3. Update each section of the resume, including the initial summary, work experience, skills, and education.
+    4. Use tools to adjust and enhance the resume content.
+    5. Ensure the resume is accurate and does not contain any fabricated information.
   expected_output: >
-    An updated resume that effectively highlights the candidate's 
-    qualifications and experiences relevant to the job.
-
+    An updated resume for {applicant_name} that includes:
+    - A compelling initial summary
+    - Highlighted work experience relevant to the job
+    - Key skills and qualifications
+    - Updated education section
+    - Overall enhanced and tailored content
 
 interview_preparation_task:
   description: >
-    Create a set of potential interview questions and talking 
-    points based on the tailored resume and job requirements. 
-    Utilize tools to generate relevant questions and discussion 
-    points. Make sure to use these question and talking points to 
-    help the candidate highlight the main points of the resume 
-    and how it matches the job posting.
+    Create a set of potential interview questions and talking points based on the tailored resume and job requirements. 
+    Follow these steps:
+    1. Review the tailored resume and job requirements.
+    2. Generate relevant interview questions that align with the job role.
+    3. Develop talking points to help {applicant_name} highlight their main qualifications and experiences.
+    4. Use tools to refine and organize the questions and talking points.
   expected_output: >
-    A document containing key questions and talking points 
-    that the candidate should prepare for the initial interview.
+    A document containing key questions and talking points for {applicant_name}, including:
+    - Potential interview questions related to the job role
+    - Talking points to emphasize {applicant_name}'s qualifications and experiences
+    - Tips for effectively communicating during the interview

@@ -25,14 +25,14 @@ class ResumeCrewCrew():
 
     def _get_llm(self):
         if self.llm_provider == 'openai':
-            return ChatOpenAI(model="gpt-3.5-turbo")
+            return ChatOpenAI(model="gpt-4o", temperature=0.5)
 
     def _get_tools(self):
         return {
             'search': SerperDevTool(),
             'scrape': ScrapeWebsiteTool(),
-            'read_resume': FileReadTool(file_path='./fake_resume.md'),
-            'semantic_search_resume': MDXSearchTool(mdx='./fake_resume.md')
+            'read_resume': FileReadTool(file_path='./resume.md'),
+            'semantic_search_resume': MDXSearchTool(mdx='./resume.md')
         }
 
     @agent
@@ -95,7 +95,7 @@ class ResumeCrewCrew():
         return Task(
             config=self.tasks_config['resume_strategy_task'],
             agent=self.resume_strategist(),
-            output_file="tailored_resume.md",
+            output_file="output/tailored_resume.md",
             context=[self.research_task(), self.profile_task()]
         )
 
@@ -104,7 +104,7 @@ class ResumeCrewCrew():
         return Task(
             config=self.tasks_config['interview_preparation_task'],
             agent=self.interview_preparer(),
-            output_file="interview_materials.md",
+            output_file="output/interview_materials.md",
             context=[self.research_task(), self.profile_task(), self.resume_strategy_task()]
         )
 
