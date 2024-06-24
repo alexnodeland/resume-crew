@@ -67,14 +67,14 @@ poetry install
 
 1. Copy the `.env.example` file to `.env` and fill in the required environment variables.
 
-2. (Optional) Modify the `cli-default.json` file to customize defaults to your specific data, including:
+2. (Optional) Modify the `data/cli-default.json` file to customize defaults to your specific data, including:
 
     - `applicant_name`: Your full name.
     - `job_posting_url`: The URL of the job posting you are applying to.
     - `github_url`: The URL of your GitHub profile.
     - `personal_writeup`: A brief writeup about your professional background and skills.
 
-3. Pleace your resume in the `data` directory, and name it `resume.md`.
+3. Place your resume in the `data` directory, and name it `resume.md`.
     
 4. Run the application:
 

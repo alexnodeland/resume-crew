@@ -3,7 +3,7 @@ import time
 from resume_crew.crew import ResumeCrewCrew
 
 def load_example_inputs():
-    with open('cli-default.json', 'r') as file:
+    with open('data/cli-default.json', 'r') as file:
         return json.load(file)
 
 def cli():
