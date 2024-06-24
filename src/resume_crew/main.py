@@ -3,10 +3,10 @@ import time
 from resume_crew.crew import ResumeCrewCrew
 
 def load_example_inputs():
-    with open('example.json', 'r') as file:
+    with open('cli-default.json', 'r') as file:
         return json.load(file)
 
-def run():
+def cli():
     # ANSI escape codes for styling
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
@@ -76,4 +76,4 @@ def run():
     print(f"\n{BOLD}{GREEN}🎉 Your resume is ready to impress! Go get that dream job! 🚀{END}")
 
 if __name__ == "__main__":
-    run()
+    cli()

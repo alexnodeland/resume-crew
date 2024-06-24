@@ -9,7 +9,7 @@ python = ">=3.10,<=3.13"
 crewai = {version = "^0.32.2", extras = ["tools"]}
 
 [tool.poetry.scripts]
-resume_crew = "resume_crew.main:run"
+resume-crew = "resume_crew.main:cli"
 
 [build-system]
 requires = ["poetry-core"]

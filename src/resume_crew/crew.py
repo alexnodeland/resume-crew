@@ -31,8 +31,8 @@ class ResumeCrewCrew():
         return {
             'search': SerperDevTool(),
             'scrape': ScrapeWebsiteTool(),
-            'read_resume': FileReadTool(file_path='./resume.md'),
-            'semantic_search_resume': MDXSearchTool(mdx='./resume.md')
+            'read_resume': FileReadTool(file_path='./data/resume.md'),
+            'semantic_search_resume': MDXSearchTool(mdx='./data/resume.md')
         }
 
     @agent
