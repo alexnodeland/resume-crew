@@ -32,3 +32,7 @@ graph TD
     F --> H((End))
     G --> H
 ```
+
+## Thanks
+
+This project was adapted from an example in the course [Multi AI Agent Systems with crewAI](https://www.deeplearning.ai/short-courses/multi-ai-agent-systems-with-crewai/). I would like to extend our gratitude to the course creators João Moura, CrewAI, and Deeplearning.AI for providing such a comprehensive and insightful resource.
