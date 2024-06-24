@@ -18,7 +18,6 @@ ResumeCrew is an AI-powered tool that helps job seekers tailor their resumes and
 - [Installation](#-installation)
 - [Usage](#-usage)
 - [Contributing](#-contributing)
-- [License](#-license)
 - [Thanks](#-thanks)
 
 ## ✨ Workflow
