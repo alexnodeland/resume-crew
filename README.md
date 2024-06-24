@@ -3,28 +3,41 @@
 ResumeCrew is an AI-powered tool that helps job seekers tailor their resumes and prepare for interviews using [CrewAI](https://github.com/joaomdmoura/crewAI).
 
 ## 📋 Table of Contents
-- [Features](#-features)
-- [How it works](#-how-it-works)
+- [Workflow](#-workflow)
+- [Diagram](#-diagram)
 - [Installation](#-installation)
 - [Usage](#-usage)
-- [Diagram](#-diagram)
 - [Contributing](#-contributing)
 - [License](#-license)
 - [Thanks](#-thanks)
 
-## ✨ Features
+## ✨ Workflow
 
-- 🔍 **Job posting analysis**: Analyzes job postings to extract key requirements.
-- 👤 **Candidate profiling**: Creates a comprehensive candidate profile using GitHub and personal information.
-- 📝 **Resume tailoring**: Tailors the resume to highlight relevant skills and experiences.
-- 🎤 **Interview preparation**: Generates potential interview questions and talking points.
+ResumeCrew streamlines your job application process through four key steps:
 
-## 🛠️ How it works
+1. 🔍 **Job Posting Analysis**: Extracts key requirements from the job posting.
+2. 👤 **Candidate Profiling**: Creates a comprehensive profile using your GitHub and personal information.
+3. 📝 **Resume Tailoring**: Customizes your resume to highlight relevant skills and experiences.
+4. 🎤 **Interview Preparation**: Generates potential questions and talking points for your interview.
 
-1. **🔍 Research**: Analyzes the job posting to extract key requirements.
-2. **👤 Profiling**: Creates a comprehensive candidate profile using GitHub and personal information.
-3. **📝 Resume Strategy**: Tailors the resume to highlight relevant skills and experiences.
-4. **🎤 Interview Preparation**: Generates potential interview questions and talking points.
+Each step is powered by AI to provide you with tailored, insightful results for your job application.
+
+## 📊 Diagram
+
+```mermaid
+graph TD
+    A((Start)) --> B[Research Task]
+    A --> C[Profile Task]
+    B --> D[Resume Strategy Task]
+    C --> D
+    B --> E[Interview Preparation Task]
+    C --> E
+    D --> E
+    D --> F[[output/tailored_resume.md]]
+    E --> G[[output/interview_materials.md]]
+    F --> H((End))
+    G --> H
+```
 
 ## 🛠️ Installation
 
@@ -60,23 +73,6 @@ poetry run resume-crew
 ```
 
 5. Follow the CLI prompts to use the application, or press `Enter` to use the default values, set in `cli-default.json`.
-
-## 📊 Diagram
-
-```mermaid
-graph TD
-    A((Start)) --> B[Research Task]
-    A --> C[Profile Task]
-    B --> D[Resume Strategy Task]
-    C --> D
-    B --> E[Interview Preparation Task]
-    C --> E
-    D --> E
-    D --> F[[output/tailored_resume.md]]
-    E --> G[[output/interview_materials.md]]
-    F --> H((End))
-    G --> H
-```
 
 ## 🤝 Contributing
 
