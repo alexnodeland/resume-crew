@@ -1,5 +1,18 @@
+# Environment variables
 .env
+
+# Virtual environments
 .venv/
-db/
+env/
+venv/
+
+# Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+db/
+
+# Output directories
 output/
