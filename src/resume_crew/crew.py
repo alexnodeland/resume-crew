@@ -126,5 +126,10 @@ class ResumeCrewCrew:
     def crew(self) -> Crew:
         """Creates the ResumeCrew crew"""
         return Crew(
-            agents=self.agents, tasks=self.tasks, verbose=1, process=Process.sequential
+            agents=self.agents,
+            tasks=self.tasks,
+            verbose=1,
+            process=Process.sequential,
+            output_log_file="output/log.txt",
+            full_output=True,
         )
