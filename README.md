@@ -75,13 +75,27 @@ poetry install
 
 3. Place your resume in the `data` directory, and name it `resume.md`.
     
-4. Run the application:
+4. Choose one of the following options to run the application:
+
+### Option 1: Run the CLI application
+
+1. Run the CLI application:
+
+```sh
+poetry run resume-crew-cli
+```
+
+2. Follow the CLI prompts to use the application, or press `Enter` to use the default values set in `cli-default.json`.
+
+3. Visit the `output` directory to view the generated resume and interview materials.
+
+### Option 2: Run the GUI application
+
+1. Run the Streamlit app:
 
 ```sh
 poetry run resume-crew
 ```
-
-5. Follow the CLI prompts to use the application, or press `Enter` to use the default values, set in `cli-default.json`.
 
 ## 🤝 Contributing
 
