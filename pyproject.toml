@@ -7,9 +7,11 @@ authors = ["Your Name <you@example.com>"]
 [tool.poetry.dependencies]
 python = ">=3.10,<=3.13"
 crewai = {version = "^0.32.2", extras = ["tools"]}
+streamlit = "^1.36.0"
 
 [tool.poetry.scripts]
-resume-crew = "resume_crew.main:cli"
+resume-crew-cli = "resume_crew.main:cli"
+resume-crew-app = "resume_crew.main:run_app"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.4.2"
